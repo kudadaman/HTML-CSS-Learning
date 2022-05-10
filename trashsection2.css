@@ -1,0 +1,11 @@
+.cantainer-2 {
+    display: flex;
+    background-color: lightgray;
+    
+}
+.ct {
+    margin: 10px;
+    border: 3px black;
+    height: 350px;
+    width: 350px;
+}
