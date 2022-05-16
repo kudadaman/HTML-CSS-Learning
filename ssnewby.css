@@ -1,6 +1,34 @@
 body {
-    
+
 }
+
+/*
+Absolute Units
+PX: Pixels (px) are considered absolute units, although they are relative to the DPI and resolution of the viewing device. But on the device itself, the PX unit is fixed and does not change based on any other element. Using PX can be problematic for responsive sites, but they are useful for maintaining consistent sizing for some elements. If you have elements that should not be resized, then using PX is a good choice.
+
+Relative Units
+
+=== Best for Initial Design ===
+%: Percentage amount that is relative to the parent element
+    - Does not overflow other content in parent element if width/height are defined in child elements
+
+VW: Relative to the viewport’s/device's width
+    -
+
+VH: Relative to the viewport’s/device's height
+
+=== Best after initial design is set (especially font sizes) ===
+
+EM: Relative to the parent element (no greater than the parent)
+    - EM if you want the size to be relative to the parent
+    - It is also relative to the parent element's font size (default: 16px)
+
+REM: Relative to the root element (HTML tag/full page)
+    - REM if you want the size based on the full webpage
+    - It is also relative to the HTML's built-in font size (default: 16px)
+
+ */
+
 /* <<COMMENTS-------------------------(USE ctrl-FORWARD SLASH"//" TO INSERT COMMENTS)>>  */
 .page-1 {
     display: flex;
@@ -64,7 +92,10 @@ height: 300px;
     
 }
 .dirt {
-    
+    /* overflow: Used to handle content overflow in a element
+    overflow-x and overflow-y are useful
+    auto is the best value, turns on when needed */
+    overflow-y: auto;
     border: 1px solid black;
     background-color: brown;
 }
